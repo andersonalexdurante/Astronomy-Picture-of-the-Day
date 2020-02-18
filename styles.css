@@ -1,10 +1,7 @@
 body {
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   background: black;
   overflow: hidden;
-  display: flex;
 }
 canvas {
   position: absolute;
@@ -13,21 +10,24 @@ canvas {
   z-index: -1;
 }
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
   font-size: 60px;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 7px;
   word-spacing: 12px;
   text-transform: uppercase;
   color:rgb(238, 238, 238);
-}
-.heading{
-  margin-top: 40px;
-  align-content: center;
+  position: relative;
+  left: 39% ;
+  margin-top: 20px;
 }
 .main{
   background-color: blueviolet;
-  height: 90vh;
-  width: 90vh;
-  align-items: center;
-  justify-content: center;
+  opacity: 0.05;
+  height: 80vh;
+  width: 180vh;
 }
