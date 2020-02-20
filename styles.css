@@ -1,7 +1,11 @@
 body {
   margin: 0;
   background: black;
-  overflow: hidden;
+ 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 canvas {
   position: absolute;
@@ -10,9 +14,9 @@ canvas {
   z-index: -1;
 }
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background:rgba(205,206,255,0.1);
+  height: 100vh;
+  width: 180vh;
 }
 .heading{
   font-size: 60px;
@@ -22,12 +26,28 @@ canvas {
   text-transform: uppercase;
   color:rgb(238, 238, 238);
   position: relative;
-  left: 39% ;
-  margin-top: 20px;
+  margin-top: 5px;
+  display: block;
 }
 .main{
-  background-color: blueviolet;
-  opacity: 0.05;
-  height: 80vh;
-  width: 180vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.date{
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.image{
+  position: relative;
+ 
+  
+}
+.explanation{
+  font-size: 30px;
+  color: white; 
 }
