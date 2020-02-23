@@ -1,7 +1,6 @@
-let scene, camera, renderer, stars, starGeo;
+let scene, camera, renderer, stars, starGeo, height, width;
 
     function init() {
-
       scene = new THREE.Scene();
 
       camera = new THREE.PerspectiveCamera(60,window.innerWidth / window.innerHeight, 1, 1000);

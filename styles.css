@@ -1,11 +1,12 @@
 body {
   margin: 0;
   background: black;
- 
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 canvas {
   position: absolute;
@@ -13,41 +14,73 @@ canvas {
   left:0;
   z-index: -1;
 }
-.container {
-  background:rgba(205,206,255,0.1);
-  height: 100vh;
-  width: 180vh;
-}
 .heading{
-  font-size: 60px;
+  font-size: 40px;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 7px;
   word-spacing: 12px;
   text-transform: uppercase;
   color:rgb(238, 238, 238);
   position: relative;
-  margin-top: 5px;
   display: block;
 }
+.box{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
 .main{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3vh 2fr;
+  grid-gap: 5px;
+}
+.date{
+  margin: 0;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+.imagem{
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.image{
+  width: 100%;
+  height: 100%;
+}
+.text{
+  background:rgba(205,206,255,0.1);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
 }
-.date{
-  font-size: 30px;
+
+.title{
   color: white;
-  margin: 10px;
-  display: block;
+  font-size: 40px;
+  text-decoration: underline;
   width: 100%;
   text-align: center;
-}
-.image{
-  position: relative;
- 
-  
+  margin: 0;
 }
 .explanation{
-  font-size: 30px;
-  color: white; 
+  color: white;
+  text-align: justify;
+  margin: 50px;
+  margin-top: 20px;
+}
+.video{
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  align-self: center;
 }
