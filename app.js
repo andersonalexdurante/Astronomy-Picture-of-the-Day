@@ -18,15 +18,17 @@ function main(json){
   const explanation = document.querySelector('.explanation')
   explanation.textContent = json.explanation
   if(json.media_type == 'video'){
-    console.log(json.url)
     document.querySelector('.media').innerHTML += `<iframe class="video" src="${json.url}"></iframe>`
   }
-  /*if(data.hdurl == null ){
+  else {
+    if(json.hdurl != null){
+      document.querySelector('.media').innerHTML += `<img class="image" src="${json.hdurl}">`
+    }
+    else{
+      document.querySelector('.media').innerHTML += `<img class="image" src="${json.url}">`
+    }
     const image = document.querySelector('.image')
     image.src = json.hdurl
   }
-  else{
-    const image = document.querySelector('.image')
-    image.src = json.url
-  }*/
+  
 }
